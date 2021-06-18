@@ -1,19 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <title>Vaisiai ir daržovės</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <link rel="stylesheet" href="CSS/style.css">
-    <title>Document</title>
 </head>
-<body>
-    
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+<body>
+    <!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left"
+        style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button">Uždaryti</a>
+        <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button">Vaisiai ir daržovės</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Apie mus</a>
+    </nav>
+
+    <!-- Top menu -->
+    <div class="w3-top">
+        <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">Vaisiai ir daržovės</div>
+        </div>
+    </div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+            <div class="w3-third">
+                <img src="IMG/bulves.png" alt="bulves" style="width:100%">
+                <h3>Bulvės</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/morkos.png" alt="morkos" style="width:100%">
+                <h3>Morkos</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/pomidorai.png" alt="pomidorai" style="width:100%">
+                <h3>Pomidorai</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <p>What else?</p>
+            </div>
+               <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-third">
+                <img src="IMG/citrinos.png" alt="citrinos" style="width:100%">
+                <h3>Citrinos</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/kriauses.png" alt="kriauses" style="width:100%">
+                <h3>Kriaušės</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/obuoliai.png" alt="obuoliai" style="width:100%">
+                <h3>Obuoliai</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+           </div>
+
+        <!-- Pagination -->
+        <!-- <div class="w3-center w3-padding-32">
+            <div class="w3-bar">
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+                <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+                <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+            </div>
+        </div> -->
+
+        <hr id="about">
+
+        <!-- About Section -->
+        <div class="w3-container w3-padding-32 w3-center">
+            <h3>Mūsų komanda</h3><br>
+            <img src="IMG/team.jpg" alt="komanda" class="w3-image" style="display:block;margin:auto" width="800"
+                height="533">
+            <div class="w3-padding-32">
+                <h4><b>Žygimantas, Artūras ir Romanas!</b></h4>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo suscipit error sit, rem exercitationem eveniet natus dignissimos iste molestias tempora dolorem vitae eos quibusdam rerum, harum nisi adipisci cum doloremque pariatur officiis voluptatem enim repellat quis culpa. Hic, quas nihil totam dolorum quaerat molestiae vero suscipit dolore illum numquam et nisi enim eveniet harum expedita. Animi numquam ipsa, sit consectetur, accusamus cupiditate nostrum soluta vel, nesciunt nemo eos repellendus molestias impedit voluptas harum ea voluptate id minus inventore. Itaque, nulla deserunt? Eius quis, dolorem libero dignissimos labore suscipit commodi atque quidem asperiores hic corrupti sunt, quae ea unde aliquid soluta quasi harum quaerat iusto sequi? Quas rem reiciendis iste explicabo at dignissimos vel ratione temporibus veniam aspernatur aperiam magni eligendi itaque exercitationem soluta optio nulla cupiditate animi laborum asperiores recusandae, fugit totam! Nemo dignissimos, reprehenderit nostrum quibusdam sequi delectus earum.</p>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="">
+                <h3>FOOTER</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies
+                    congue gravida diam non fringilla.</p>
+               
+            </div>
+            </div>
+        </footer>
+
+        <!-- End page content -->
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
