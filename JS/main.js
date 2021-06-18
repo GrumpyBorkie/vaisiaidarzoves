@@ -6,7 +6,7 @@ var productsCardAll = document.getElementsByClassName("w3-third");
 btnSearch.addEventListener("click", function () {
     //clear search criteria field
     for (var i = 0; i < productsCardAll.length; i++) {
-        productsCardAll[i].setAttribute("class", " w3-third");
+        productsCardAll[i].classList.remove("d-none");
     }
 
     var inputFieldSearch = document.getElementById("searchField").value.toLowerCase();
@@ -14,7 +14,7 @@ btnSearch.addEventListener("click", function () {
     for (var i = 0; i < productsAll.length; i++) {
         if (productsAll[i].innerHTML.toLowerCase().includes(inputFieldSearch)) { //do nothing
         } else {
-            productsCardAll[i].setAttribute("class", " w3-third + d-none");
+            productsCardAll[i].classList.add("d-none");
         }
     }
 });
