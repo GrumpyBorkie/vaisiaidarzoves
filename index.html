@@ -23,6 +23,8 @@
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Apie mus</a>
     </nav>
 
+
+
     <!-- Top menu -->
     <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
@@ -34,9 +36,16 @@
     <!-- !PAGE CONTENT! -->
     <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
 
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Visi</button>
+            <button class="btn" onclick="filterSelection('vaisiai')"> Vaisiai</button>
+            <button class="btn" onclick="filterSelection('darzoves')"> Daržovės</button>
+        </div>
+
+
         <!-- First Photo Grid-->
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
-            <div class="w3-third">
+            <div class="w3-third filterDiv darzoves">
                 <img src="IMG/bulves.png" alt="bulves" style="width:100%">
                 <h3>Bulvės</h3>
                 <h4>Vidutinis svoris</h4>
@@ -91,7 +100,7 @@
                 </ul>
 
             </div>
-            <div class="w3-third">
+            <div class="w3-third filterDiv darzoves">
                 <img src="IMG/morkos.png" alt="morkos" style="width:100%">
                 <h3>Morkos</h3>
                 <h4>Vidutinis svoris</h4>
@@ -145,9 +154,10 @@
 
                 </ul>
             </div>
-            <div class="w3-third">
+            <div class="w3-third filterDiv darzoves">
                 <img src="IMG/pomidorai.png" alt="pomidorai" style="width:100%">
                 <h3>Pomidorai</h3>
+
                 <h4>Vidutinis svoris</h4>
                 <p>80g</p>
 
@@ -369,6 +379,7 @@
                         </table>
 
                     </ul>
+
                 </div>
             </div>
 
@@ -438,6 +449,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
     </script>
+
     <script src="js/main.js"></script>
 </body>
 
