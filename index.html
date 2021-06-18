@@ -23,8 +23,6 @@
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Apie mus</a>
     </nav>
 
-
-
     <!-- Top menu -->
     <div class="w3-top">
         <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
@@ -33,8 +31,18 @@
         </div>
     </div>
 
+
+   
+
     <!-- !PAGE CONTENT! -->
     <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+      <div>
+      
+        <input type="text" id="searchField" placeholder="Įveskite paieškos tekstą">
+        <input type="button" id="btnSearch" value="Ieškoti">
+        
+      </div>
 
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Visi</button>
@@ -43,10 +51,15 @@
         </div>
 
 
+
         <!-- First Photo Grid-->
         <div class="w3-row-padding w3-padding-16 w3-center" id="food">
             <div class="w3-third filterDiv darzoves">
                 <img src="IMG/bulves.png" alt="bulves" style="width:100%">
+
+                <h3 class="searchItem">Bulvės</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
                 <h3>Bulvės</h3>
                 <h4>Vidutinis svoris</h4>
                 <p>100g</p>
@@ -99,9 +112,15 @@
 
                 </ul>
 
+
             </div>
             <div class="w3-third filterDiv darzoves">
                 <img src="IMG/morkos.png" alt="morkos" style="width:100%">
+
+                <h3 class="searchItem">Morkos</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+
                 <h3>Morkos</h3>
                 <h4>Vidutinis svoris</h4>
                 <p>75g</p>
@@ -153,9 +172,33 @@
                     </table>
 
                 </ul>
+
             </div>
             <div class="w3-third filterDiv darzoves">
                 <img src="IMG/pomidorai.png" alt="pomidorai" style="width:100%">
+
+                <h3 class="searchItem">Pomidorai</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                <p>What else?</p>
+            </div>
+               <!-- Second Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-third">
+                <img src="IMG/citrinos.png" alt="citrinos" style="width:100%">
+                <h3 class="searchItem">Citrinos</h3>
+                <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/kriauses.png" alt="kriauses" style="width:100%">
+                <h3 class="searchItem">Kriaušės</h3>
+                <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.
+                </p>
+            </div>
+            <div class="w3-third">
+                <img src="IMG/obuoliai.png" alt="obuoliai" style="width:100%">
+                <h3 class="searchItem">Obuoliai</h3>
+                <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+
                 <h3>Pomidorai</h3>
 
                 <h4>Vidutinis svoris</h4>
@@ -381,6 +424,7 @@
                     </ul>
 
                 </div>
+
             </div>
 
             <!-- Pagination -->
